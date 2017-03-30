@@ -25,13 +25,27 @@ dependencies {
 	compile group: 'javax.servlet', name: 'jstl', version: '1.2'
     // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
 	compile group: 'org.springframework', name: 'spring-webmvc', version: '4.0.0.RELEASE'
+    compile 'commons-dbcp:commons-dbcp:1.4'  
     testCompile 'junit:junit:4.12'
+    // https://mvnrepository.com/artifact/org.json/json
+	compile group: 'org.json', name: 'json', version: '20090211'
+	// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+	compile "javax.ws.rs:jsr311-api:1.1.1"
+    compile 'com.sun.jersey:jersey-server:1.13'
+    compile 'com.sun.jersey:jersey-core:1.13'
+    compile 'com.sun.jersey:jersey-servlet:1.13'
+    // https://mvnrepository.com/artifact/javax.servlet/servlet-api
+	compile group: 'javax.servlet', name: 'servlet-api', version: '2.5'
+    
 }
 
-jettyRun{
+
+jettyRun {
 	contextPath = "storeManagerSystem"
 	httpPort = 8080
 }
+
 
 jettyRunWar{
 	contextPath = "storeManagerSystem"
