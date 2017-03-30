@@ -80,6 +80,6 @@ public class ClientStoreOwnerController {
 		}else{
 			modelMap.addAttribute("message_err", "Loi");
 		}
-		return PAGE_HOME;asdasdsad
+		return PAGE_HOME;
 	}
 }
